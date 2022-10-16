@@ -1,0 +1,46 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <h1>Voice Selfie Collage App 
+        <img src="selfie.jpeg" id="logo_img">
+        </h1>
+        <hr>
+        <h4 style="color:Blue;">Say "Selfie" for taking your selfies to make a collage </h4>
+        
+        <div class="form-group">
+            <label>Your voice output : </label>
+            <textarea class="form-control" id="txtbox"></textarea>
+
+        </div>
+
+        <p>Press the Start button</p>
+        <button id="start-btn" onclick="stt()" class="btn btn-primary">Start</button>
+        <br>
+        <label>Your Camera </label>
+        <div id="camera">
+
+        </div>
+        <br>
+
+        <label>Your selfie collage will display here: </label>
+        <div id="result">
+
+         </div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
